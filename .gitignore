@@ -1,0 +1,17 @@
+.env
+.env.*
+*.key
+*.pem
+secrets/
+node_modules/
+__pycache__/
+.venv/
+dist/
+build/
+.DS_Store
+Thumbs.db
+.claude/settings.local.json
+.yomiyasu/
+docs/
+x-drafts/
+_text/
