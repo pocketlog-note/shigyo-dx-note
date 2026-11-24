@@ -9,7 +9,9 @@
 ## 技術スタック
 - Python 3.10（標準ライブラリのみ）。`build.py`: `content/*.md` ＋ `pages/*.md` ＋ `style.css` → `docs/`（git 管理外）。アイキャッチは `tools/make_eyecatch.py` で SVG を自動生成、X 投稿文は `x-drafts/`。
 - 生成一式は `play\niche-news-sites\site`（入札ウォッチ）からコピーして、サイト名・色・キャラクター・出典表記を変えたもの。
-- 公開: GitHub Actions（`.github/workflows/pages.yml`）で GitHub Pages。予定URL: https://pocketlog-note.github.io/shigyo-dx-note/ （匿名アカウント `pocketlog-note`）
+- 公開: GitHub Actions（`.github/workflows/pages.yml`）で GitHub Pages。main に push すると公開される（毎朝6時JSTにも再ビルド）。
+  - 公開URL: https://pocketlog-note.github.io/shigyo-dx-note/ （2026-11-25 公開）
+  - リポジトリ: `pocketlog-note/shigyo-dx-note`（Public。匿名アカウント。作成とPagesの設定は別セッションがユーザーの指示で実施）
 
 ## よく使うコマンド（このフォルダで実行。`python -X utf8` を付けると表示が文字化けしない）
 - 点検: `python check.py`（`--all` で下書きも）。本文3,000字未満・【要確認】残り・出典なしのファクトはエラー
